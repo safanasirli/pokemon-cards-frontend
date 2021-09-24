@@ -1,1 +1,1 @@
-# pokemon-cards-frontend
+# pokemon-sanctuary-frontend
