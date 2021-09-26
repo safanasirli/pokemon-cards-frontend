@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pokemon'
+import './Pokemon.css'
 function Pokemon() {
     return (
         <div>
