@@ -1,12 +1,10 @@
 import React from 'react';
 import './Cart.css';
-import Paypal from '../Paypal/Paypal';
+import Paypal from './Paypal';
 
 function Cart() {
     return (
         <div>
-            <h1>Cart</h1>
-            {/* Paypal button */}
             <Paypal />
         </div>
     );

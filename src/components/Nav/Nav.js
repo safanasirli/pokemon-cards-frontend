@@ -9,11 +9,6 @@ function Nav() {
 
     const showSidebar = () => setSidebar(!sidebar);
     return (
-        <div>
-            <Link to='/'>Shop</Link>
-            <Link to='/login'>Login</Link>
-            <Link to='/signup'>Signup</Link>
-            <Link to='/cart'>Cart</Link>
         <div className="nav-container">
             <div className="logo-container">
                 <img className="logo" src={logo} alt="logo" />
@@ -26,7 +21,7 @@ function Nav() {
                     <li className="nav-item"><Link to='/signup'>Signup</Link></li>
                 </ul>
             </div>
-            <div>
+            <div className="hamburger-container">
                 <MenuIcon className="hamburger" style={{ width: "20px", height: "20px" }} onClick={showSidebar} />
                 {sidebar ?
                     <Sidebar /> : ""
