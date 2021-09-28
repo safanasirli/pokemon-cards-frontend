@@ -9,6 +9,11 @@ function Nav() {
 
     const showSidebar = () => setSidebar(!sidebar);
     return (
+        <div>
+            <Link to='/'>Shop</Link>
+            <Link to='/login'>Login</Link>
+            <Link to='/signup'>Signup</Link>
+            <Link to='/cart'>Cart</Link>
         <div className="nav-container">
             <div className="logo-container">
                 <img className="logo" src={logo} alt="logo" />
