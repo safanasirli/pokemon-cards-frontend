@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   background: linear-gradient(45deg, grey, white, black, red);
+  height: 120px;
 }
 .logo-container {
   display: flex;
@@ -18,22 +19,21 @@
 .logo-container h1 {
   margin-left: 10px;
 }
-ul {
+.nav-links {
   display: flex;
   flex-direction: row;
   list-style: none;
   margin-right: 20px;
-  justify-content: center;
 }
-li {
+.nav-item {
   padding: 10px;
   font-size: 30px;
   font-weight: 500;
 }
-a {
+.nav-links a {
   text-decoration: none;
   color: White;
 }
-a:hover{
-    color:pink
+.nav-links a:hover {
+  color: pink;
 }
