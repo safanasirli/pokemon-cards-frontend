@@ -1,5 +1,4 @@
 function Login() {
-    return(
     <form>
         <div class>
             {/* <img src="" alt="Login Image"/> */}
@@ -23,7 +22,4 @@ function Login() {
             <span class ="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
-    )
 }
-
-export default Login;

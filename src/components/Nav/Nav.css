@@ -1,0 +1,42 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(45deg, grey, white, black, red);
+  height: 120px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  margin-left: 20px;
+}
+.logo {
+  margin-top: 5px;
+  height: 100px;
+  width: 100px;
+}
+.logo-container h1 {
+  margin-left: 10px;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 20px;
+}
+.nav-item {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.nav-links a {
+  text-decoration: none;
+  color: White;
+}
+.nav-links a:hover {
+  color: pink;
+}
+
+@media only screen and (max-width: 700px) {
+}

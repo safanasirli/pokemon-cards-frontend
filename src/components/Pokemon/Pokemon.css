@@ -1,0 +1,62 @@
+.pokemon-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-left: 2%;
+}
+.right {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+.pokemon-image {
+  width: 400px;
+  height: 400px;
+  margin-top: 3rem;
+}
+.pokemon-container h1 {
+  margin-top: 2rem;
+}
+.reserve-button {
+  margin-top: 4rem;
+  padding: 10px 40px 10px 40px;
+  font-size: 18px;
+  background-color: #f08383;
+  border: none;
+  border-radius: 2%;
+}
+.reserve-button:hover {
+  background-color: #ee5252;
+}
+.description {
+  max-width: 80%;
+  font-size: 25px;
+}
+.pokemon-container h2 {
+  margin-top: 3rem;
+}
+.pokemon-container a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+  .pokemon-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .pokemon-image {
+    margin-top: 0;
+  }
+  .description {
+    width: 80%;
+    margin: auto;
+  }
+  .pokemon-container h2 {
+    margin-top: 1.5rem;
+  }
+  .reserve-button {
+    margin-top: 0px;
+  }
+}
