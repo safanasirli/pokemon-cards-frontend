@@ -1,8 +1,8 @@
 import React from 'react';
-import './Cart.css';
+import './Checkout.css';
 import Paypal from './Paypal';
 
-function Cart() {
+function Checkout() {
     return (
         <div>
             <Paypal />
@@ -10,4 +10,4 @@ function Cart() {
     );
 }
 
-export default Cart;
+export default Checkout;
