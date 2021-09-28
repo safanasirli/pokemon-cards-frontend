@@ -37,6 +37,20 @@
 .nav-links a:hover {
   color: pink;
 }
+.hamburger-container {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger-container {
+    display: block;
+  }
 
-@media only screen and (max-width: 700px) {
+  .hamburger {
+    display: block;
+    color: #ffffff;
+    margin-top: 2rem;
+  }
 }

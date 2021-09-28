@@ -21,7 +21,7 @@ function Nav() {
                     <li className="nav-item"><Link to='/signup'>Signup</Link></li>
                 </ul>
             </div>
-            <div>
+            <div className="hamburger-container">
                 <MenuIcon className="hamburger" style={{ width: "20px", height: "20px" }} onClick={showSidebar} />
                 {sidebar ?
                     <Sidebar /> : ""

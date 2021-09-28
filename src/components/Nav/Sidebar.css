@@ -1,0 +1,17 @@
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  background-color: rgb(238, 206, 206);
+  margin-right: 5rem;
+}
+.nav-items a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav-link {
+  line-height: 50px;
+}
