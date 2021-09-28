@@ -13,8 +13,8 @@ function Pokemon() {
                 </section>
                 <section className="right">
                     <h1>Venusaur</h1>
-                    <h2>$1000</h2>
                     <p className="description">A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle. </p>
+                    <h2>$1000</h2>
                     <button className="reserve-button"><Link to='/signup'>Reserve Pokemon</Link></button>
                 </section>
             </div>
