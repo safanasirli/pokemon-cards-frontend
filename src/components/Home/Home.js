@@ -40,7 +40,6 @@ function Home(props) {
                                     <h1>{pokemon.name}</h1>
                                     <h3>${pokemon.price}</h3>
                                 </div>
-
                             </li>
                             // </Link>
                         )
