@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
-import Nav from '../Nav/Nav';
+import { Link } from 'react-router-dom';
 import { APIURL } from '../../config';
-import './Pokemon.css'
+import Nav from '../Nav/Nav';
+import './Pokemon.css';
 
 function Pokemon({ match }) {
     const [error, setError] = useState(false);
@@ -27,14 +27,15 @@ function Pokemon({ match }) {
 
                 <section className="left">
                     <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />
-
                 </section>
+
                 <section className="right">
                     <h1>{pokemon.name}</h1>
                     <p className="description">{pokemon.description} </p>
                     <h2>${pokemon.price}</h2>
                     <button className="reserve-button"><Link to='/signup'>Reserve Pokemon</Link></button>
                 </section>
+
             </div>
         </div>
     );

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Nav.css'
+import './Nav.css';
 import logo from '../../images/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar';
+
 function Nav() {
     const [sidebar, setSidebar] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
+    
     return (
         <div className="nav-container">
             <div className="logo-container">
