@@ -8,29 +8,47 @@ form {
   align-items: center;
 }
 
+p {
+  font-size: 1em;
+}
+
+.cart {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 230, 230);
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 0;
+  padding: 2%;
+}
+
+.checkout-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 25%;
+}
+
+img {
+  width: 100%;
+}
+
 .checkout-container {
   width: 60vw;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   align-items: flex-start;
   justify-content: space-around;
   background-color: rgb(230, 230, 230);
   border: 2px solid rgba(128, 128, 128, 0.5);
   border-radius: 5px;
   margin: 0;
-  padding: 2%;
-}
-
-.checkout-items {
-  width: 60vw;
-  display: flex;
-  flex-flow: row wrap;
-  background-color: rgb(230, 230, 230);
-  border: 2px solid rgba(128, 128, 128, 0.5);
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  margin: 5% 0;
   padding: 2%;
 }
 
@@ -74,7 +92,6 @@ label {
   margin: 0 2%;
 }
 
-
 .checkoutBtn {
   margin: 5% 0 0 0;
   align-self: center;
@@ -89,4 +106,29 @@ button {
   margin: 0 auto;
   padding: 3%;
   font-size: 1.4em;
+}
+
+@media only screen and (max-width: 945px) {
+  .checkout-container {
+    flex-flow: row wrap;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  button {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .checkout-items {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .item {
+    width: 60%;
+  }
 }
