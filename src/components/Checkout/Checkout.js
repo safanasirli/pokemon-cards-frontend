@@ -1,6 +1,5 @@
 import React from 'react';
 import './Checkout.css';
-import Paypal from './Paypal';
 
 class Checkout extends React.Component {
    
@@ -175,10 +174,6 @@ class Checkout extends React.Component {
                         </div>
                         <div className='checkoutBtn'>
                             <button onSubmit={this.handleSubmit}>Continue to checkout</button>
-                        </div>
-                        <p>OR</p>
-                        <div className='paypalBtn'>
-                            <Paypal />
                         </div>
                     </div>
     
