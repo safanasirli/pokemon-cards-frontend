@@ -5,7 +5,7 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 import { APIURL } from "../../config";
 
-function Home(props) {
+function Home() {
     const [pokemons, setPokemons] = useState([]);
     const [error, setError] = useState(false);
 
@@ -14,7 +14,7 @@ function Home(props) {
             .then(response => response.json())
             .then(data => {
                 setPokemons(data)
-                console.log(pokemons)
+                console.log(data)
             })
             .catch(() => {
                 setError(true)
@@ -33,15 +33,15 @@ function Home(props) {
                 <ul className="pokemon-list">
                     {pokemons.map(pokemon => {
                         return (
-                            // <Link to={`/pokemons/${pokemon._id}`}>
                             <li className="pokemon-card" key={pokemon._id}>
-                                <img className="pokemon-list-images" src={pokemon.image} alt={pokemon.name} />
-                                <div className="card-text">
-                                    <h1>{pokemon.name}</h1>
-                                    <h3>${pokemon.price}</h3>
-                                </div>
+                                <Link to={`/pokemons/${pokemon._id}`}>
+                                    <img className="pokemon-list-images" src={pokemon.image} alt={pokemon.name} />
+                                    <div className="card-text">
+                                        <h1>{pokemon.name}</h1>
+                                        <h3>${pokemon.price}</h3>
+                                    </div>
+                                </Link>
                             </li>
-                            // </Link>
                         )
                     })
                     }

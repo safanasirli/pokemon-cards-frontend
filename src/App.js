@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/' component={Home} />
+        <Route exact path='/pokemons' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/cart' component={Cart} />
-        <Route exact path='/pokemon' component={Pokemon} />
+        <Route exact path='/pokemons/:id' component={Pokemon} />
       </Switch>
     </div>
   );
