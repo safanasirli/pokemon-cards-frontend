@@ -33,7 +33,7 @@ function Pokemon({ match }) {
                     <h1>{pokemon.name}</h1>
                     <p className="description">{pokemon.description} </p>
                     <h2>${pokemon.price}</h2>
-                    <button className="reserve-button"><Link to='/signup'>Reserve Pokemon</Link></button>
+                    <button className="reserve-button"><Link to='/login'>Reserve Pokemon</Link></button>
                 </section>
 
             </div>

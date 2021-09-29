@@ -19,7 +19,7 @@ function Login() {
                     <input type="checkbox" checked="checked" name='remember'>Remember Me</input>
                 </label> */}
             </div>
-            <div className="container">
+            <div className="container2">
                 <button type="button" className="cancelbtn"><Link to='/'>Cancel</Link></button>
                 <span className="psw">Forgot <a href="/">password?</a></span>
             </div>
