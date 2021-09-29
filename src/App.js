@@ -4,15 +4,16 @@ import Login from './components/Login/Login'
 import Signup from './components/Signup/Signup'
 import Pokemon from './components/Pokemon/Pokemon'
 import Cart from './components/Cart/Cart'
+
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/pokemons' component={Home} />
+        <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
         <Route exact path='/cart' component={Cart} />
-        <Route exact path='/pokemons/:id' component={Pokemon} />
+        <Route path='/pokemons/:id' component={Pokemon} />
       </Switch>
     </div>
   );

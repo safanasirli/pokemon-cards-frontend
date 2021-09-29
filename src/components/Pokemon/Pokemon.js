@@ -6,7 +6,7 @@ import './Pokemon.css'
 
 function Pokemon({ match }) {
     const [error, setError] = useState(false);
-    const [pokemon, setPokemon] = useState(null);
+    const [pokemon, setPokemon] = useState([]);
 
     useEffect(() => {
         fetch(`${APIURL}/pokemons/${match.params.id}`)
@@ -24,6 +24,7 @@ function Pokemon({ match }) {
         <div className="container">
             <Nav />
             <div className="pokemon-container">
+
                 <section className="left">
                     <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />
 
