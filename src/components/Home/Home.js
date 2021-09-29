@@ -44,6 +44,7 @@ function Home() {
                             </li>
                         )
                     })}
+                    )
                 </ul>
             </main>
             <footer>
