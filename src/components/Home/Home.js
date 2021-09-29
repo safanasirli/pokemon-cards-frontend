@@ -42,10 +42,7 @@ function Home() {
                                     </div>
                                 </Link>
                             </li>
-                        )
-                    })
-                    }
-
+                        )})}
                 </ul>
             </main>
             <footer>
