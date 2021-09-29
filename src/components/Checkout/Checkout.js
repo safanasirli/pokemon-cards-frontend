@@ -35,12 +35,22 @@ class Checkout extends React.Component {
     }
 
     handleSubmit(event) {
+        alert('submitted');
         event.preventDefault()
     }
 
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
+                <div className="checkout-items">
+                    <h4>Cart</h4>
+                        <p><a href="#">Product 1</a> <span className="price">$15</span></p>
+                        <p><a href="#">Product 2</a> <span className="price">$5</span></p>
+                        <p><a href="#">Product 3</a> <span className="price">$8</span></p>
+                        <p><a href="#">Product 4</a> <span className="price">$2</span></p>
+                        <p>Total <span className="price"><b>$30</b></span></p>
+                </div>
+
                 <div className='checkout-container'> 
                     {/* Billing Address */}
                     <div className='col'>
@@ -93,7 +103,7 @@ class Checkout extends React.Component {
                             <div className="col-2">
                                 <label htmlFor="zip">Zip</label>
                                 <input 
-                                    inputmode="numeric"
+                                    inputMode="numeric"
                                     type="postal-code"
                                     name="zip" 
                                     pattern="[0-9]*"
@@ -112,7 +122,7 @@ class Checkout extends React.Component {
                             <label htmlFor="cardName">Name on Card</label>
                             <input 
                                 type="text" 
-                                autocomplete='cc-name'
+                                autoComplete='cc-name'
                                 name="cardName" 
                                 value={this.state.cardName}
                                 placeholder="Enter card holder's name"
@@ -122,8 +132,8 @@ class Checkout extends React.Component {
                    
                             <input 
                                 type='text'
-                                inputmode="numeric"
-                                autocomplete="cc-number"
+                                inputMode="numeric"
+                                autoComplete="cc-number"
                                 name="cardNumber"
                                 value={this.state.cardNumber}
                                 placeholder="xxxx xxxx xxxx xxxx"
@@ -132,7 +142,7 @@ class Checkout extends React.Component {
                             <label htmlFor="expmonth">Exp Month</label>
                             <input 
                                 type="text"
-                                autocomplete="cc-exp-month"
+                                autoComplete="cc-exp-month"
                                 name="expmonth"
                                 value={this.state.expmonth}
                                 placeholder="Month"
@@ -144,7 +154,7 @@ class Checkout extends React.Component {
                                 <label htmlFor="expyear">Exp Year</label>
                                 <input 
                                     type="text"
-                                    autocomplete="cc-exp-year"
+                                    autoComplete="cc-exp-year"
                                     name="expyear"
                                     value={this.state.expyear}
                                     placeholder="20XX"
@@ -155,7 +165,7 @@ class Checkout extends React.Component {
                                 <label htmlFor="cvv">CVV</label>
                                 <input 
                                     type="text"
-                                    autocomplete="cc-csc"
+                                    autoComplete="cc-csc"
                                     name="cvv"
                                     value={this.state.cvv}
                                     placeholder="xxx"
@@ -173,16 +183,6 @@ class Checkout extends React.Component {
                     </div>
     
                 </div>
-                
-                <div className="checkout-items">
-                    <h4>Cart</h4>
-                        <p><a href="#">Product 1</a> <span className="price">$15</span></p>
-                        <p><a href="#">Product 2</a> <span className="price">$5</span></p>
-                        <p><a href="#">Product 3</a> <span className="price">$8</span></p>
-                        <p><a href="#">Product 4</a> <span className="price">$2</span></p>
-                        <p>Total <span className="price"><b>$30</b></span></p>
-                </div>
-
             </form>
         );
     }
