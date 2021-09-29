@@ -10,7 +10,7 @@ function Login() {
             </div> */}
 
             <div className='login-container'>
-                <input type="text" placeholder="Enter Username" name="name" required />
+                <input type="text" placeholder="Enter Email" name="name" required />
                 <input type="password" placeholder="Enter Password" name="psw" required />
                 <button className="login" type="submit">Login</button>
                 <h5>Not Signed up yet?</h5>
@@ -19,7 +19,7 @@ function Login() {
                     <input type="checkbox" checked="checked" name='remember'>Remember Me</input>
                 </label> */}
             </div>
-            <div className="container">
+            <div className="container2">
                 <button type="button" className="cancelbtn"><Link to='/'>Cancel</Link></button>
                 <span className="psw">Forgot <a href="/">password?</a></span>
             </div>
