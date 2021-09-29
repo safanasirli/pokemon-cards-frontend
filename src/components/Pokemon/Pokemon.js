@@ -1,22 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import Nav from '../Nav/Nav'
-import './Pokemon.css'
-function Pokemon() {
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { APIURL } from '../../config';
+import Nav from '../Nav/Nav';
+import './Pokemon.css';
+
+function Pokemon({ match }) {
+    const [error, setError] = useState(false);
+    const [pokemon, setPokemon] = useState([]);
+
+    useEffect(() => {
+        fetch(`${APIURL}/pokemons/${match.params.id}`)
+            .then(response => response.json())
+            .then(data => {
+                setPokemon(data)
+                console.log(data)
+            })
+            .catch(() => {
+                setError(true)
+            })
+    }, [match.params.id]);
+
     return (
         <div className="container">
             <Nav />
             <div className="pokemon-container">
-                <section className="left">
-                    <img className="pokemon-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="Venusaur" />
 
+                <section className="left">
+                    <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />
                 </section>
+
                 <section className="right">
-                    <h1>Venusaur</h1>
-                    <p className="description">A bewitching aroma wafts from its flower. The fragrance becalms those engaged in a battle. </p>
-                    <h2>$1000</h2>
-                    <button className="reserve-button"><Link to='/signup'>Reserve Pokemon</Link></button>
+                    <h1>{pokemon.name}</h1>
+                    <p className="description">{pokemon.description} </p>
+                    <h2>${pokemon.price}</h2>
+                    <button className="reserve-button"><Link to='/login'>Reserve Pokemon</Link></button>
                 </section>
+
             </div>
         </div>
     );

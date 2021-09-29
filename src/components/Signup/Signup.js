@@ -1,32 +1,25 @@
 import React from 'react';
-import './Signup.css'
+import { Link } from 'react-router-dom'
+import './Signup.css';
+
 function Signup() {
     return (
-        <form>
-            <div className="container">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to create an account.</p>
-                <hr/>
-
-                <label for="email">Email</label>
-                <input type="text" placeholder="Enter Email" name="email" required/>
-
-                <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" required/>
-
-                <label for="psw-repeat">Repeat Password</label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required/>
-
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"/> Remember Me
-                </label>
-
-                <div className="clearfix">
-                    <button type="button" className="cancelbtn">Cancel</button>
-                    <button type="submit" className="signupbtn">Sign Up</button>
-                </div>
+        <div className="signup-container">
+            <div className='login-container'>
+                <input type="text" placeholder="Full Name" name="full-name" required />
+                <input type="text" placeholder="Email" name="email" required />
+                <input type="password" placeholder="Password" name="psw" required />
+                <button className="login" type="submit">Sign Up</button>
+                <h5>Already Signed up?</h5>
+                <button className="signup"><Link to='/login'>Login</Link></button>
+                {/* <label>
+                    <input type="checkbox" checked="checked" name='remember'>Remember Me</input>
+                </label> */}
             </div>
-        </form>
+            <div className="container2">
+                <button type="button" className="cancel-btn"><Link to='/'>Cancel</Link></button>
+            </div>
+        </div>
     );
 }
 

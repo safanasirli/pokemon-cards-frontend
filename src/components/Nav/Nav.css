@@ -1,20 +1,22 @@
 .nav-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(45deg, grey, white, black, red);
-  height: 120px;
+  background: linear-gradient(45deg, grey, grey, black, red, #e97575);
 }
 .logo-container {
   display: flex;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  /* justify-content: center;
+  align-items:center; */
   flex-direction: row;
-  width: 200px;
-  margin-left: 20px;
+  color: white;
 }
 .logo {
   margin-top: 5px;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
 }
 .logo-container h1 {
   margin-left: 10px;
@@ -23,11 +25,15 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-right: 20px;
+  text-align: center;
+  justify-content: right;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-right: 2rem;
 }
 .nav-item {
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .nav-links a {
@@ -37,6 +43,30 @@
 .nav-links a:hover {
   color: pink;
 }
+.hamburger-container {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .logo-container {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
 
-@media only screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  .hamburger-container {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    color: #ffffff;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo-container h1 {
+    font-size: 20px;
+    margin-top: 1.8rem;
+  }
 }
