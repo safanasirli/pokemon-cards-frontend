@@ -1,8 +1,10 @@
 .pokemon-container {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: row;
   margin: 0 auto;
-  margin-left: 2%;
+  color: #272727;
 }
 .right {
   margin-top: 5%;
@@ -14,13 +16,15 @@
   margin-top: 3rem;
 }
 .pokemon-container h1 {
+  font-size: 40px;
   margin-top: 2rem;
+  margin-bottom: 3px;
 }
 .reserve-button {
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding: 10px 40px 10px 40px;
   font-size: 18px;
-  background-color: #f08383;
+  background-color: #d41616;
   border: none;
   border-radius: 2%;
 }
@@ -28,10 +32,11 @@
   background-color: #ee5252;
 }
 .description {
-  max-width: 80%;
   font-size: 25px;
+  margin-left: 0;
 }
 .pokemon-container h2 {
+  font-size: 38px;
   margin-top: 3rem;
 }
 .pokemon-container a {
