@@ -1,3 +1,5 @@
+import React from 'react';
+import './Login.css';
 
 function Login() {
     return (
@@ -14,9 +16,9 @@ function Login() {
                 <input type="password" placeholder="Enter Password" name="psw" required />
 
                 <button type="submit">Login</button>
-                <label>
+                {/* <label>
                     <input type="checkbox" checked="checked" name='remember'>Remember Me</input>
-                </label>
+                </label> */}
             </div>
 
             <div className="container">
