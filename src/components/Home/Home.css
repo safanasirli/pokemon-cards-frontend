@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Maven+Pro:wght@400;500;700&display=swap");
+body {
+  font-family: "Comfortaa", cursive;
+}
 @-webkit-keyframes pulsate-fwd {
   0% {
     -webkit-transform: scale(1);
@@ -35,16 +39,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
+  padding: 0 auto;
   margin: 0 auto;
-  margin-top: 60px;
 }
 .pokemon-card {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
+  padding: 3%;
   border: 1px solid #cac7c7;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 6%;
 }
 .pokemon-card:hover {
   -webkit-animation: pulsate-fwd 0.1s ease-in both;
@@ -54,19 +59,32 @@
 }
 .pokemon-list h1 {
   text-align: left;
-  margin-left: 2rem;
-  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
 .pokemon-list h3 {
   text-align: right;
-  margin-right: 2rem;
-  margin-top: 3rem;
+  font-size: 25px;
+  margin-right: 1rem;
+  margin-top: 2rem;
 }
 .pokemon-list a {
   color: #4e4d4d;
   text-decoration: none;
 }
 .pokemon-list-images {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+}
+@media only screen and (max-width: 500px) {
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-right: 12%;
+  }
 }
