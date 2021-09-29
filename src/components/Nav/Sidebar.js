@@ -5,9 +5,9 @@ function Sidebar() {
     return (
         <div>
             <ul className="nav-items">
-                <li className="nav-link"><Link to='/'>Shop</Link></li>
-                <li className="nav-link"><Link to='/login'>Login</Link></li>
-                <li className="nav-link"><Link to='/signup'>Signup</Link></li>
+                <li className="nav-link"><Link to='/'>SHOP</Link></li>
+                <li className="nav-link"><Link to='/login'>LOGIN</Link></li>
+                <li className="nav-link"><Link to='/signup'>SIGN UP</Link></li>
             </ul>
         </div>
     );
