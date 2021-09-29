@@ -10,7 +10,7 @@ function Login() {
             </div> */}
 
             <div className='login-container'>
-                <input type="text" placeholder="Enter Email" name="name" required />
+                <input type="text" placeholder="Enter Email" name="email" required />
                 <input type="password" placeholder="Enter Password" name="psw" required />
                 <button className="login" type="submit">Login</button>
                 <h5>Not Signed up yet?</h5>

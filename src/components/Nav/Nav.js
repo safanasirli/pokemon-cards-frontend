@@ -8,7 +8,7 @@ import Sidebar from './Sidebar';
 function Nav() {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
-    
+
     return (
         <div className="nav-container">
             <div className="logo-container">
