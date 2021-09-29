@@ -29,7 +29,7 @@ function Home() {
             <header>
                 <Nav />
             </header>
-            <main>
+            <div className="main-container">
                 <ul className="pokemon-list">
                     {pokemons.map(pokemon => {
                         return (
@@ -44,9 +44,8 @@ function Home() {
                             </li>
                         )
                     })}
-                    )
                 </ul>
-            </main>
+            </div>
             <footer>
                 <Footer />
             </footer>

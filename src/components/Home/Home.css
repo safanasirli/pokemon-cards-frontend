@@ -26,6 +26,10 @@
     transform: scale(1);
   }
 }
+.main-container {
+  height: 100%;
+  margin-bottom: 4rem;
+}
 .pokemon-list {
   display: flex;
   flex-direction: row;
