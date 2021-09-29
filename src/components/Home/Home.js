@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import './Home.css'
 import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
+import { APIURL } from "../../config";
 
 function Home() {
+    const [pokemons, setPokemons] = useState([]);
+    const [error, setError] = useState(false);
 
+    useEffect(() => {
+        fetch(`${APIURL}/pokemons`)
+            .then(response => response.json())
+            .then(data => {
+                setPokemons(data)
+                console.log(data)
+            })
+            .catch(() => {
+                setError(true)
+            })
+    }, []);
+
+    if (error) {
+        return <div>Sorry, can't get pokemons.</div>
+    }
     return (
         <div className="container">
             <header>
@@ -13,30 +31,21 @@ function Home() {
             </header>
             <main>
                 <ul className="pokemon-list">
-                    <Link to='/pokemon'>
-                        <li className="pokemon-card">
-                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png" alt="pokemon1" />
-                            <div className="card-text">
-                                <h1>Venusaur</h1>
-                                <h3>1000$</h3>
-                            </div>
+                    {pokemons.map(pokemon => {
+                        return (
+                            <li className="pokemon-card" key={pokemon._id}>
+                                <Link to={`/pokemons/${pokemon._id}`}>
+                                    <img className="pokemon-list-images" src={pokemon.image} alt={pokemon.name} />
+                                    <div className="card-text">
+                                        <h1>{pokemon.name}</h1>
+                                        <h3>${pokemon.price}</h3>
+                                    </div>
+                                </Link>
+                            </li>
+                        )
+                    })
+                    }
 
-                        </li>
-                    </Link>
-                    <li className="pokemon-card" >
-                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" alt="pokemon2" />
-                        <div className="card-text">
-                            <h1>Charmeleon</h1>
-                            <h3>2000$</h3>
-                        </div>
-                    </li>
-                    <li className="pokemon-card">
-                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="pokemon3" />
-                        <div className="card-text">
-                            <h1>Squirtle</h1>
-                            <h3>1300$</h3>
-                        </div>
-                    </li>
                 </ul>
             </main>
             <footer>
