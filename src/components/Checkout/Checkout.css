@@ -4,7 +4,6 @@
 
 .checkout-container {
   width: 60%;
-  margin: 5% auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -12,6 +11,7 @@
   background-color: rgb(230, 230, 230);
   border: 1px solid grey;
   border-radius: 5px;
+  margin: 5% auto;
   padding: 2%;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .col-2 {
-  
+  padding: 0 0.5%;
 }
 
 label {
