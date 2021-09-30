@@ -1,25 +1,54 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import './Signup.css';
+import React from 'react'
+import { useState } from 'react';
+import { Redirect } from 'react-router';
+import { APIURL } from '../../config';
+import UserForm from '../Data/UserForm';
 
-function Signup() {
+const Signup =() => {
+    const initialUserState ={
+        name: '',
+        email: '',
+        password: ''
+    };
+
+    const[user, setUser] = useState(initialUserState);
+    const[createId, setCreateId] = useState(null);
+    const [error, setError] = useState(false);
+
+    const handleChange = event => {
+        event.persist();
+        setUser({
+            ...user,
+            [event.target.name]: event.target.value
+        });
+    };
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        const url = `${APIURL}/users/`;
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8'
+            },
+            body : JSON.stringify(user)
+        })
+        .then(response => response.json())
+        .then(data => {
+            setCreateId(data._id);
+        })
+        .catch(() => {
+            setError(true);
+        });
+    };
+
     return (
-        <div className="signup-container">
-            <div className='login-container'>
-                <input type="text" placeholder="Full Name" name="full-name" required />
-                <input type="text" placeholder="Email" name="email" required />
-                <input type="password" placeholder="Password" name="psw" required />
-                <button className="login" type="submit">Sign Up</button>
-                <h5>Already Signed up?</h5>
-                <button className="signup"><Link to='/login'>Login</Link></button>
-                {/* <label>
-                    <input type="checkbox" checked="checked" name='remember'>Remember Me</input>
-                </label> */}
-            </div>
-            <div className="container2">
-                <button type="button" className="cancel-btn"><Link to='/'>Cancel</Link></button>
-            </div>
-        </div>
+        <UserForm
+        user={ user }
+        handleChange= { handleChange }
+        handleSubmit= { handleSubmit }
+        />
     );
 }
 
