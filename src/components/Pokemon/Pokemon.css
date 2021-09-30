@@ -24,13 +24,16 @@
   margin-bottom: 3px;
 }
 
-.home-button {
+.update-button {
+  margin-left:2rem;
   margin-top: 3rem;
   padding: 10px 40px 10px 40px;
   font-size: 18px;
   background-color: #d41616;
   border: none;
   border-radius: 2%;
+  color: white;
+  font-weight:700;
 }
 
 .home-button:hover {
