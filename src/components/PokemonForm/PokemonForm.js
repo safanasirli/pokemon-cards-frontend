@@ -3,52 +3,39 @@ import './PokemonForm.css';
 
 const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
   <form onSubmit={handleSubmit}>
-    <label htmlFor='name'>Name
-      <input
+    <label htmlFor='name'>Name</label>
+    <input
         placeholder='Pokemon Name'
         value={pokemon.name}
         name='name'
         onChange={handleChange}
         required
         id='name'
-      />
-    </label>
-    <label htmlFor='image'>Image
-      <input
-        placeholder='Pokemon Image'
-        value={pokemon.image}
-        name='image'
-        onChange={handleChange}
-        id='image'
-      />
-    </label>
-    <label htmlFor='description'>Description
-      <input
+    />
+    <label htmlFor='description'>Description</label>
+    <input
         placeholder='Pokemon Description'
         value={pokemon.description}
         name='description'
         onChange={handleChange}
         id='description'
-      />
-    </label>
-    <label htmlFor='price'>Price
-      <input
+    />
+    <label htmlFor='price'>Price</label>
+    <input
         placeholder='Pokemon Price'
         value={pokemon.price}
         name='price'
         onChange={handleChange}
         id='p'
-      />
-    </label>
-    <label htmlFor='image'>Image
-      <input
+    />
+    <label htmlFor='image'>Image</label>
+    <input
         placeholder='Pokemon Image URL'
         value={pokemon.image}
         name='image'
         onChange={handleChange}
         id='image'
-      />
-    </label>
+    />
     <button type='submit'>Submit</button>
   </form>
 );

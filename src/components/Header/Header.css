@@ -33,7 +33,7 @@
 @media only screen and (max-width: 800px) {
   .logo-container {
     margin-top: 2rem;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 }
 
