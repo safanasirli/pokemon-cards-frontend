@@ -114,7 +114,7 @@ class Checkout extends React.Component {
                     </div>
     
                     {/* Payment */}
-                    <div className='col'>
+                    <div className='col-payment'>
                         <h3>Payment</h3>
                         <div className='row-1'>
                             <label htmlFor='cardName'>Name on Card</label>
