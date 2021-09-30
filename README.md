@@ -9,6 +9,7 @@ PokeMon Sanctuary
 ## Scrum master
 Trent Sanders
 
+
 ## Team Members
 Annie Lee  
 Christina Whether  
@@ -89,6 +90,15 @@ The Description page includes :
 
 
 ## Workflow
-Day0 = Scaffold the front end repo
-Day1 = Created Home Page, Navigation bar, Description page
-Day2 = Created Checkout Cart, Login Page, intilizied API
+9/24/2021 = Scaffold the front end repo
+9/27/2021 = Created Home component, Navigation bar component, Description page component
+9/28/2021 = Created Checkout Cart component, Login Page componentn, intilizied API
+9/29/2021 = Created Footer component, styled components, UserForms for SignUp/Login Page
+9/30/2021 = Updated FrontEnd and BackEnd READMEs, Removed SignUp/Login page due to time constraints, ensuring CRUD functionally, Project Presentation 
+10/1/2021 = Presentation
+
+## Planned Updates
+- [] User Authentication // Pending...
+- [x] Route Switching // Complete
+- [x] Pseudo Payment Option // Complete
+
