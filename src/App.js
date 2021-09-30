@@ -3,7 +3,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Pokemon from './components/Pokemon/Pokemon';
-import Checkout from './components/Checkout/Checkout';
+// import Checkout from './components/Checkout/Checkout';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
         <Route path='/pokemons/:id' component={Pokemon} />
-        <Route exact path='/checkout' component={Checkout} />
+        {/* <Route exact path='/checkout' component={Checkout} /> */}
       </Switch>
     </div>
   );
