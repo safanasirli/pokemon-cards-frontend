@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import { APIURL } from '../../config';
 
+
 function UpdatePokemon({ match }) {
     const [pokemon, setPokemon] = useState(null);
     const [createdId, setCreatedId] = useState(null);
