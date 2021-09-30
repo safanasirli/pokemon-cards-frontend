@@ -1,29 +1,40 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import './Login.css';
+import avatarPic from '../../images/avatar.png';
+
 
 function Login() {
-    return (
-        <div className="form-container">
-            {/* <div>
-                {/* <img src="" alt="Login Image"/>
-            </div> */}
-
-            <div className='login-container'>
-                <input type="text" placeholder="Enter Email" name="email" required />
-                <input type="password" placeholder="Enter Password" name="psw" required />
-                <button className="login" type="submit">Login</button>
-                <h5>Not Signed up yet?</h5>
-                <button className="signup"><Link to='/signup'>Sign Up</Link></button>
-                {/* <label>
-                    <input type="checkbox" checked="checked" name='remember'>Remember Me</input>
-                </label> */}
-            </div>
-            <div className="container2">
-                <button type="button" className="cancelbtn"><Link to='/'>Cancel</Link></button>
-                <span className="psw">Forgot <a href="/">password?</a></span>
-            </div>
+    return(
+    <form>
+        <div className="imgcontainer">
+            <img src={avatarPic} alt="avatar silouette" className="avatar"/>
         </div>
+        {/* Give DIV a class, have DIV  */}
+        {/* Use flexbox */}
+        <div> 
+            <div>
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required/>
+
+                <label for ="psw">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required/>
+        </div>
+        <div>
+                <button type="submit">Login</button>
+                <button type="button" className="cancelbtn">Cancel</button>
+        </div>
+            <br/>
+            
+        </div>
+
+        <div class="container">
+            
+                <label>
+                    <input type="checkbox" checked="checked" name='remember'/>Remember Me
+                </label>
+            <span className="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
     )
 }
 
