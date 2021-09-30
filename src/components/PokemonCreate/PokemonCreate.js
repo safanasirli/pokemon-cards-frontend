@@ -49,15 +49,17 @@ const PokemonCreate = () => {
   }
 
   return (
-    <div>
+    <div className='create-container'>
       <Header />
-      <h3>Create a Pokemon</h3>
-      { error && <p>Something went wrong...Please try again!</p> }
-      <PokemonForm 
-        pokemon={ pokemon }
-        handleChange={ handleChange }
-        handleSubmit={ handleSubmit }
-      />
+      <div className='form-container'>
+        <h1>Create a Pokemon</h1>
+        { error && <p>Something went wrong...Please try again!</p> }
+        <PokemonForm 
+          pokemon={ pokemon }
+          handleChange={ handleChange }
+          handleSubmit={ handleSubmit }
+        />
+      </div>
     </div>
   )
 }
