@@ -19,20 +19,30 @@ PokeMon Sanctuary
 >[Click to check the app!](https://pokemon-sanctuary.herokuapp.com/)
 
 ## Project Description
-Our team set out to make an E-commerce app for a Pokemon adoption agency called PokeMon Sancutary. The app is intended for general populace consumption, catering to all ages.
+Hi! Welcome to our project: PokeMon Sanctuary. This project was designed to test/reinforce our MERN/CRUD understanding in a group setting. We decided that
+a E-commerce app simulating the purchase of PokeMon from an adoption agency would be the best way to demonstrate our knowledge. Each team was assigned roles
+split evenly between FrontEnd and BackEnd development to ensure even workflow. 
+
+Below we det
+
+Credits to all those who contributed.
 
 ## Team Members
-Annie Lee - Fullstack Developer
-Christina Whethers - Lead BackEnd Developer
-Safa Nasirli - Lead FrontEnd Developer
-Trent Sanders - Scrum Leader
+[Annie Lee](https://github.com/anniezoyinlee) - Fullstack Developer
+
+[Christina Whethers](https://github.com/Flandolly) - Lead BackEnd Developer
+
+[Safa Nasirli](https://github.com/safanasirli) - Lead FrontEnd Developer
+
+[Trent Sanders](https://github.com/MrGoodBurger) - Scrum Leader
 
 
 ## Requirements:
-There are no special requirements
+There are no special requirements.
 
 ## Features:
-[MERN](https://www.mongodb.com/mern-stack)([Mongodb](https://www.mongodb.com/),[Expressjs](https://expressjs.com/),[Reactjs](https://reactjs.org/),[Nodejs](https://nodejs.org/en/))
+[MERN](https://www.mongodb.com/mern-stack)([Mongodb](https://www.mongodb.com/), [Expressjs](https://expressjs.com/), [Reactjs](https://reactjs.org/), [Nodejs](https://nodejs.org/en/))
+
 [Mongoose](https://mongoosejs.com/)
 
 
@@ -63,12 +73,12 @@ The Description page includes :
 
 
 ## Workflow
-9/24/2021 = Scaffold the front end repo
-9/27/2021 = Created Home component, Navigation bar component, Description page component
-9/28/2021 = Created Checkout Cart component, Login Page componentn, intilizied API
-9/29/2021 = Created Footer component, styled components, UserForms for SignUp/Login Page
-9/30/2021 = Updated FrontEnd and BackEnd READMEs, Removed SignUp/Login page due to time constraints, ensuring CRUD functionally, Project Presentation 
-10/1/2021 = Presentation
+* 9/24/2021 = Scaffold the front end repo
+* 9/27/2021 = Created Home component, Navigation bar component, Description page component
+* 9/28/2021 = Created Checkout Cart component, Login Page componentn, intilizied API
+* 9/29/2021 = Created Footer component, styled components, UserForms for SignUp/Login Page
+* 9/30/2021 = Updated FrontEnd and BackEnd READMEs, Removed SignUp/Login page due to time constraints, ensuring CRUD functionally, Project Presentation 
+* 10/1/2021 = Presentation
 
 ## Planned Updates
 - [] User Authentication // Pending...

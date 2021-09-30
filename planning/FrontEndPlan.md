@@ -10,7 +10,7 @@
 ### BackEnd:
 
 - Annie Lee
-- Christina Whether
+- Christina Whethers
 
 ## FrontEnd Team Plan:
 
@@ -21,4 +21,14 @@
 - Identify and implement the minimal state the app needs
 - Use CSS for styling
 - Add functions to mutate the state and thus make the UI interactive
-- Deploy to the Heroku
+- Deploy to Heroku
+
+## User Stories
+- The website to have the official pokemon colors
+- Th Landing page to have multiple card containers
+- Each card has a unique pokemon
+- Each card has an interactive link to the Description Page
+- There is a Nav bar that displays the component links
+- Each card shows the name and price
+
+
