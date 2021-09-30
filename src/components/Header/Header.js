@@ -5,16 +5,16 @@ import './Header.css';
 
 function Header() {
 
-    return (
-        <div className="header-container">
-            <div className="logo-container">
-                <img className="logo" src={logo} alt="logo" />
-                <Link to={`/`}>
-                    <h1>Pokemon Sanctuary</h1>
-                </Link>
-            </div>
-        </div>
-    );
+	return (
+		<div className='header-container'>
+			<div className='logo-container'>
+				<img className='logo' src={logo} alt='logo' />
+				<Link to={`/`}>
+					<h1>Pokemon Sanctuary</h1>
+				</Link>
+			</div>
+		</div>
+	);
 }
 
 export default Header;

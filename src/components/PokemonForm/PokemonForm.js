@@ -3,53 +3,53 @@ import './PokemonForm.css';
 
 const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
   <form onSubmit={handleSubmit}>
-    <label htmlFor="name">Name
+    <label htmlFor='name'>Name
       <input
-        placeholder="Pokemon Name"
+        placeholder='Pokemon Name'
         value={pokemon.name}
-        name="name"
+        name='name'
         onChange={handleChange}
         required
-        id="name"
+        id='name'
       />
     </label>
-    <label htmlFor="image">Image
+    <label htmlFor='image'>Image
       <input
-        placeholder="Pokemon Image"
+        placeholder='Pokemon Image'
         value={pokemon.image}
-        name="image"
+        name='image'
         onChange={handleChange}
-        id="image"
+        id='image'
       />
     </label>
-    <label htmlFor="description">Description
+    <label htmlFor='description'>Description
       <input
-        placeholder="Pokemon Description"
+        placeholder='Pokemon Description'
         value={pokemon.description}
-        name="description"
+        name='description'
         onChange={handleChange}
-        id="description"
+        id='description'
       />
     </label>
-    <label htmlFor="price">Price
+    <label htmlFor='price'>Price
       <input
-        placeholder="Pokemon Price"
+        placeholder='Pokemon Price'
         value={pokemon.price}
-        name="price"
+        name='price'
         onChange={handleChange}
-        id="p"
+        id='p'
       />
     </label>
-    <label htmlFor="image">Image
+    <label htmlFor='image'>Image
       <input
-        placeholder="Pokemon Image URL"
+        placeholder='Pokemon Image URL'
         value={pokemon.image}
-        name="image"
+        name='image'
         onChange={handleChange}
-        id="image"
+        id='image'
       />
     </label>
-    <button type="submit">Submit</button>
+    <button type='submit'>Submit</button>
   </form>
 );
 
