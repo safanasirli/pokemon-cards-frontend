@@ -49,9 +49,7 @@ function UpdatePokemon({ match }) {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(pokemon)
                 setCreatedId(data._id);
-                console.log(data._id)
             })
             .catch(() => {
                 setError(true);

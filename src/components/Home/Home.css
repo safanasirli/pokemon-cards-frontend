@@ -4,10 +4,6 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
-.createBtn {
-  margin: auto;
-}
-
 a {
   text-decoration: none;
 }
@@ -91,19 +87,19 @@ a {
   text-decoration: none;
 }
 .createBtn {
-  display:flex;
+  display: flex;
   margin: 0 auto;
-  margin-top:1rem;
+  margin-top: 1rem;
   padding: 10px 40px 10px 40px;
   font-size: 18px;
   background-color: #d41616;
   border: none;
   border-radius: 2%;
   color: white;
-  font-weight:700; 
+  font-weight: 700;
 }
-.createBtn a{
-  color:white;
+.createBtn a {
+  color: white;
 }
 .pokemon-list-images {
   width: 150px;
