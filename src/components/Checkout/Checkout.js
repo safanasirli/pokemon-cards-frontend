@@ -2,7 +2,13 @@ import React from 'react';
 import './Checkout.css';
 
 class Checkout extends React.Component {
-   
+// add error handling functions and show success message after checkout
+// grab dada from user reserved pokemon
+// show total amount from add on price
+// after user click on checkout button 
+//    pokemon amounts -1 in database
+//    clear checkout items
+
     constructor(props) {
         super(props)
         this.state = this.initialState()
@@ -41,13 +47,26 @@ class Checkout extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="checkout-items">
+                <div className="cart">
                     <h4>Cart</h4>
-                        <p><a href="#">Product 1</a> <span className="price">$15</span></p>
-                        <p><a href="#">Product 2</a> <span className="price">$5</span></p>
-                        <p><a href="#">Product 3</a> <span className="price">$8</span></p>
-                        <p><a href="#">Product 4</a> <span className="price">$2</span></p>
-                        <p>Total <span className="price"><b>$30</b></span></p>
+                    <div className='checkout-items'>
+                        <div className='item'>
+                            <p>Pokemon</p>
+                            <img src={"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg"} />
+                            <div className="$999">$15</div>
+                        </div>
+                        <div className='item'>
+                            <p>Pokemon</p>
+                            <img src={"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg"} />
+                            <div className="$999">$15</div>
+                        </div>
+                        <div className='item'>
+                            <p>Pokemon</p>
+                            <img src={"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg"} />
+                            <div className="$999">$15</div>
+                        </div> 
+                    </div>
+                    <div className='total'>Total: $100</div>
                 </div>
 
                 <div className='checkout-container'> 
@@ -95,19 +114,19 @@ class Checkout extends React.Component {
                                     type="text" 
                                     name="state" 
                                     value={this.state.state}
-                                    placeholder="Enter your state"
+                                    placeholder="Ex: MA"
                                     onChange={this.handleChange}
                                 />
                             </div>
                             <div className="col-2">
-                                <label htmlFor="zip">Zip</label>
+                                <label htmlFor="zip">Zip Code</label>
                                 <input 
                                     inputMode="numeric"
                                     type="postal-code"
                                     name="zip" 
                                     pattern="[0-9]*"
                                     value={this.state.zip}
-                                    placeholder="Enter your zip code"
+                                    placeholder="Ex: 02114"
                                     onChange={this.handleChange}
                                 />
                             </div>
