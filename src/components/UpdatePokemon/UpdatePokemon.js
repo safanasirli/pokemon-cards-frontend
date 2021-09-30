@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import { APIURL } from '../../config';
 import PokemonForm from '../PokemonForm/PokemonForm'
+import Header from '../Header/Header.js';
+import './UpdatePokemon.css';
 
 function UpdatePokemon({ match }) {
     const [pokemon, setPokemon] = useState(null);
@@ -62,15 +64,18 @@ function UpdatePokemon({ match }) {
 
     return (
         <div>
-            <h1>Update Pokemon</h1>
-            {error && <p>Please try again!</p>}
-            {pokemon && (
-                <PokemonForm
-                    pokemon={pokemon}
-                    handleChange={handleChange}
-                    handleSubmit={handleSubmit}
-                />
-            )}
+            <Header />
+            <div className='form-container'>
+                <h1>Update Pokemon</h1>
+                {error && <p>Please try again!</p>}
+                {pokemon && (
+                    <PokemonForm
+                        pokemon={pokemon}
+                        handleChange={handleChange}
+                        handleSubmit={handleSubmit}
+                    />
+                )}
+            </div>
         </div>
     )
 }
