@@ -6,16 +6,16 @@ import PokemonCreate from './components/PokemonCreate/PokemonCreate';
 import UpdatePokemon from './components/UpdatePokemon/UpdatePokemon';
 
 function App() {
-  return (
-    <div className="App">
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/pokemons/create' component={PokemonCreate} />
-        <Route exact path='/pokemons/:id' component={Pokemon} />
-        <Route exact path='/pokemons/:id/update' component={UpdatePokemon} />
-      </Switch>
-    </div>
-  );
+return (
+	<div className='App'>
+		<Switch>
+			<Route exact path='/' component={Home} />
+			<Route exact path='/pokemons/create' component={PokemonCreate} />
+			<Route exact path='/pokemons/:id' component={Pokemon} />
+			<Route exact path='/pokemons/:id/update' component={UpdatePokemon} />
+		</Switch>
+	</div>
+);
 }
 
 export default App;

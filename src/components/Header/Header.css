@@ -4,21 +4,22 @@
   justify-content: space-between;
   background: linear-gradient(45deg, grey, grey, black, red, #e97575);
 }
+
 .logo-container {
   display: flex;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /* justify-content: center;
-  align-items:center; */
   flex-direction: row;
   color: white;
 }
+
 .logo {
   margin-top: 5px;
   height: 70px;
   width: 70px;
 }
+
 .logo-container h1 {
   margin-left: 10px;
 }
@@ -32,7 +33,7 @@
 @media only screen and (max-width: 800px) {
   .logo-container {
     margin-top: 2rem;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 }
 

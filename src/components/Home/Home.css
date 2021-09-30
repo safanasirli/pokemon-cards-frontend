@@ -86,6 +86,7 @@ a {
   color: #4e4d4d;
   text-decoration: none;
 }
+
 .createBtn {
   display: flex;
   margin: 0 auto;
@@ -96,11 +97,13 @@ a {
   border: none;
   border-radius: 2%;
   color: white;
-  font-weight: 700;
+  font-weight: 700; 
 }
-.createBtn a {
+
+.createBtn a{
   color: white;
 }
+
 .pokemon-list-images {
   width: 150px;
   height: 150px;
