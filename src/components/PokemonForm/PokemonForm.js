@@ -5,7 +5,7 @@ const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
   <form onSubmit={ handleSubmit }>
     <label htmlFor="name">Name:
       <input 
-        placeholder="pokemon name"
+        placeholder="Pokemon Name"
         value={ pokemon.name }
         name="name"
         onChange={ handleChange }
@@ -15,7 +15,7 @@ const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
     </label>
     <label htmlFor="description">Description:
       <input 
-        placeholder="pokemon description"
+        placeholder="Pokemon Description"
         value={ pokemon.description }
         name="description"
         onChange={ handleChange } 
@@ -24,7 +24,7 @@ const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
     </label>
     <label htmlFor="price">Price:
       <input 
-        placeholder="pokemon price"
+        placeholder="Pokemon Price"
         value={ pokemon.price }
         name="price"
         onChange={ handleChange } 
