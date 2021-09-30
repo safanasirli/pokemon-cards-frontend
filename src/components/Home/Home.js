@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import Nav from '../Nav/Nav';
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import { APIURL } from "../../config";
 
 function Home() {
@@ -24,10 +23,11 @@ function Home() {
     if (error) {
         return <div>Sorry, can't get pokemons.</div>
     }
+    
     return (
         <div className="container">
             <header>
-                <Nav />
+                <Header />
             </header>
             <div className="main-container">
                 <button className='createBtn'>

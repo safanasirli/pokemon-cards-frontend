@@ -1,4 +1,5 @@
 import React from 'react';
+import './PokemonForm.css';
 
 const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
   <form onSubmit={ handleSubmit }>

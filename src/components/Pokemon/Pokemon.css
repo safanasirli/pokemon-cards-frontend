@@ -6,21 +6,25 @@
   margin: 0 auto;
   color: #272727;
 }
+
 .right {
   margin-top: 5%;
   margin-left: 3%;
 }
+
 .pokemon-image {
   width: 400px;
   height: 400px;
   margin-top: 3rem;
 }
+
 .pokemon-container h1 {
   font-size: 40px;
   margin-top: 2rem;
   margin-bottom: 3px;
 }
-.reserve-button {
+
+.home-button {
   margin-top: 3rem;
   padding: 10px 40px 10px 40px;
   font-size: 18px;
@@ -28,22 +32,27 @@
   border: none;
   border-radius: 2%;
 }
-.reserve-button:hover {
+
+.home-button:hover {
   background-color: #ee5252;
 }
+
 .description {
   font-size: 25px;
   margin-left: 0;
 }
+
 .pokemon-container h2 {
   font-size: 38px;
   margin-top: 3rem;
 }
+
 .pokemon-container a {
   color: white;
   font-weight: 600;
   text-decoration: none;
 }
+
 @media only screen and (max-width: 900px) {
   .pokemon-container {
     display: flex;
@@ -51,17 +60,21 @@
     text-align: center;
     margin: 0 auto;
   }
+
   .pokemon-image {
     margin-top: 0;
   }
+
   .description {
     width: 80%;
     margin: auto;
   }
+
   .pokemon-container h2 {
     margin-top: 1.5rem;
   }
-  .reserve-button {
+
+  .home-button {
     margin-top: 0px;
   }
 }

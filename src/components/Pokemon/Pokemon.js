@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { APIURL } from '../../config';
-import Nav from '../Nav/Nav';
+import Header from '../Header/Header';
 import './Pokemon.css';
 
 function Pokemon({ match }) {
@@ -22,7 +22,7 @@ function Pokemon({ match }) {
 
     return (
         <div className="container">
-            <Nav />
+            <Header />
             <div className="pokemon-container">
 
                 <section className="left">
@@ -33,7 +33,7 @@ function Pokemon({ match }) {
                     <h1>{pokemon.name}</h1>
                     <p className="description">{pokemon.description} </p>
                     <h2>${pokemon.price}</h2>
-                    <button className="reserve-button"><Link to='/checkout'>Reserve Pokemon</Link></button>
+                    <button className="home-button"><Link to='/'>Home</Link></button>
                 </section>
 
             </div>
