@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import Pokemon from './components/Pokemon/Pokemon';
-// import Checkout from './components/Checkout/Checkout';
+import Checkout from './components/Checkout/Checkout';
 
 function App() {
   return (
