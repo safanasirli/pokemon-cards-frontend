@@ -11,6 +11,9 @@ const Signup = () => {
         password: ''
     };
 
+    const url = `${APIURL}/users/`;
+    console.log(url)
+
     const[user, setUser] = useState(initialUserState);
     const[createId, setCreateId] = useState(null);
     const [error, setError] = useState(false);
@@ -25,8 +28,7 @@ const Signup = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        const url = `${APIURL}/users`;
-
+        console.log("string")
         fetch(url, {
             method: 'POST',
             headers: {
