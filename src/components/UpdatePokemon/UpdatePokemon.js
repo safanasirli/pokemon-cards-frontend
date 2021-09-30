@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import { APIURL } from '../../config';
 import PokemonForm from '../PokemonForm/PokemonForm'
 
 function UpdatePokemon({ match }) {
-    const [pokemon, setPokemon] = useState([]);
+    const [pokemon, setPokemon] = useState(null);
     const [createdId, setCreatedId] = useState(null);
     const [error, setError] = useState(false);
 
@@ -13,6 +13,7 @@ function UpdatePokemon({ match }) {
         fetch(url)
             .then((response) => response.json())
             .then((data) => {
+                console.log(data)
                 setPokemon({
                     name: data.name,
                     description: data.description,
@@ -46,7 +47,9 @@ function UpdatePokemon({ match }) {
         })
             .then((response) => response.json())
             .then((data) => {
+                console.log(pokemon)
                 setCreatedId(data._id);
+                console.log(data._id)
             })
             .catch(() => {
                 setError(true);

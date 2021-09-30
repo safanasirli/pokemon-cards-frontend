@@ -6,7 +6,7 @@ const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
     <label htmlFor="name">Name:
       <input 
         placeholder="Pokemon Name"
-        value={ pokemon.name }
+        value={pokemon.name }
         name="name"
         onChange={ handleChange }
         required 
@@ -16,7 +16,7 @@ const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
     <label htmlFor="image">Image
       <input 
         placeholder="Pokemon Image"
-        value={ pokemon.image }
+        value={pokemon.image }
         name="image"
         onChange={ handleChange }
         id="image"
