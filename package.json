@@ -1,6 +1,10 @@
 {
   "name": "pokemon-sanctuary-frontend",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.21.0"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -38,7 +42,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [

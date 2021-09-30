@@ -30,6 +30,9 @@ function Home() {
                 <Nav />
             </header>
             <div className="main-container">
+                <button className='createBtn'>
+                    <Link to='/pokemons/create'>Create a Pokemon</Link>
+                </button>
                 <ul className="pokemon-list">
                     {pokemons.map(pokemon => {
                         return (
@@ -46,9 +49,6 @@ function Home() {
                     })}
                 </ul>
             </div>
-            <footer>
-                <Footer />
-            </footer>
         </div>
     );
 }
