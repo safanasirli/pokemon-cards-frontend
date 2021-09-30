@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Login.css';
 import avatarPic from '../../images/avatar.png';
+import { APIURL } from '../../config.js';
+import { useHistory } from 'react-router';
+function Login({ logged, setLogged }) {
+    // const history = useHistory
 
-
-function Login() {
+    // const reRoute = () => {
+    //     history.push('/');
+    // }
+    {console.log(logged)}
     return(
     <form>
         <div className="imgcontainer">
@@ -20,20 +26,16 @@ function Login() {
                 <input type="password" placeholder="Enter Password" name="psw" required/>
         </div>
         <div>
-                <button type="submit">Login</button>
+                {/* Reroute would go into the onclick function */}
+                <button type="submit" onClick={(e) => setLogged(true)}>Login</button>
                 <button type="button" className="cancelbtn">Cancel</button>
         </div>
             <br/>
             
         </div>
 
-        <div class="container">
-            
-                <label>
-                    <input type="checkbox" checked="checked" name='remember'/>Remember Me
-                </label>
-            <span className="psw">Forgot <a href="#">password?</a></span>
-        </div>
+        <div className="container"/>
+
     </form>
     )
 }
