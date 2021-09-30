@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { APIURL } from '../../config';
 import Header from '../Header/Header';
+
 import './Pokemon.css';
 
 function Pokemon({ match }) {
@@ -33,7 +34,7 @@ function Pokemon({ match }) {
                     <h1>{pokemon.name}</h1>
                     <p className="description">{pokemon.description} </p>
                     <h2>${pokemon.price}</h2>
-                    <button className="home-button"><Link to='/'>Home</Link></button>
+                    <button className="home-button"><Link to='/pokemons/id/update'>Update Pokemon</Link></button>
                 </section>
 
             </div>

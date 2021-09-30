@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import { APIURL } from '../../config';
-
+import UpdateForm from './UpdateForm'
 
 function UpdatePokemon({ match }) {
     const [pokemon, setPokemon] = useState(null);
@@ -60,8 +60,16 @@ function UpdatePokemon({ match }) {
     return (
         <div>
             <h1>Update Pokemon</h1>
+            {error && <p>Please try again!</p>}
+            {pokemon && (
+                <UpdateForm
+                    pokemon={pokemon}
+                    handleChange={handleChange}
+                    handleSubmit={handleSubmit}
+                />
+            )}
         </div>
-    );
+    )
 }
 
 export default UpdatePokemon;
