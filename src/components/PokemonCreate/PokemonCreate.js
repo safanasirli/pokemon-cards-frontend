@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { APIURL } from '../../config.js'
 import PokemonForm from '../PokemonForm/PokemonForm.js';
+import Header from '../Header/Header.js';
 import './PokemonCreate.css';
 
 const PokemonCreate = () => {
@@ -50,6 +51,7 @@ const PokemonCreate = () => {
 
   return (
     <div>
+      <Header />
       <h3>Create a Pokemon</h3>
       { error && <p>Something went wrong...Please try again!</p> }
       <PokemonForm 

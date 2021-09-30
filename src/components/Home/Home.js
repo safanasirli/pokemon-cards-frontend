@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import Nav from '../Nav/Nav';
+import Header from '../Header/Header';
 import { APIURL } from "../../config";
 
 function Home() {
@@ -27,7 +27,7 @@ function Home() {
     return (
         <div className="container">
             <header>
-                <Nav />
+                <Header />
             </header>
             <div className="main-container">
                 <button className='createBtn'>
