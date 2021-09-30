@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Nav.css';
 import logo from '../../images/logo.png';
-import MenuIcon from '@mui/icons-material/Menu';
 import Sidebar from './Sidebar';
 
 function Nav() {
