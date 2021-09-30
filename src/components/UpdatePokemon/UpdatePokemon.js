@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Redirect } from "react-router-dom";
 import { APIURL } from '../../config';
-import UpdateForm from './UpdateForm'
+import PokemonForm from '../PokemonForm/PokemonForm'
 
 function UpdatePokemon({ match }) {
-    const [pokemon, setPokemon] = useState(null);
+    const [pokemon, setPokemon] = useState([]);
     const [createdId, setCreatedId] = useState(null);
     const [error, setError] = useState(false);
 
@@ -62,7 +62,7 @@ function UpdatePokemon({ match }) {
             <h1>Update Pokemon</h1>
             {error && <p>Please try again!</p>}
             {pokemon && (
-                <UpdateForm
+                <PokemonForm
                     pokemon={pokemon}
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}

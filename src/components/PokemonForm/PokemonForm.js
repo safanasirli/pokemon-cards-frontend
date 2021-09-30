@@ -13,6 +13,15 @@ const PokemonForm = ({ pokemon, handleSubmit, handleChange }) => (
         id="name"
       />
     </label>
+    <label htmlFor="image">Image
+      <input 
+        placeholder="Pokemon Image"
+        value={ pokemon.image }
+        name="image"
+        onChange={ handleChange }
+        id="image"
+      />
+    </label>
     <label htmlFor="description">Description:
       <input 
         placeholder="Pokemon Description"
