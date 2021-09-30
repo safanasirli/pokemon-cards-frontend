@@ -47,23 +47,23 @@ class Checkout extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="cart">
+                <div className='cart'>
                     <h4>Cart</h4>
                     <div className='checkout-items'>
                         <div className='item'>
                             <p>Pokemon</p>
-                            <img src={"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg"} />
-                            <div className="$999">$15</div>
+                            <img src={'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg'} />
+                            <div className='$999'>$15</div>
                         </div>
                         <div className='item'>
                             <p>Pokemon</p>
-                            <img src={"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg"} />
-                            <div className="$999">$15</div>
+                            <img src={'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg'} />
+                            <div className='$999'>$15</div>
                         </div>
                         <div className='item'>
                             <p>Pokemon</p>
-                            <img src={"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg"} />
-                            <div className="$999">$15</div>
+                            <img src={'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/06/Pikachu-color-model-publicity-cel.jpg'} />
+                            <div className='$999'>$15</div>
                         </div> 
                     </div>
                     <div className='total'>Total: $100</div>
@@ -74,59 +74,59 @@ class Checkout extends React.Component {
                     <div className='col'>
                         <h3>Billing Address</h3>
                         <div className='row-1'>
-                            <label htmlFor="username">Full Name</label>
+                            <label htmlFor='username'>Full Name</label>
                             <input 
-                                type="text"
-                                name="username" 
+                                type='text'
+                                name='username' 
                                 value={this.state.username}
-                                placeholder="Enter your full name"
+                                placeholder='Enter your full name'
                                 onChange={this.handleChange}
                             />
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor='email'>Email</label>
                             <input 
-                                type="email" 
-                                name="email" 
+                                type='email' 
+                                name='email' 
                                 value={this.state.email}
-                                placeholder="Enter your email" 
+                                placeholder='Enter your email' 
                                 onChange={this.handleChange}
                             />
-                            <label htmlFor="address">Address</label>
+                            <label htmlFor='address'>Address</label>
                             <input 
-                                type="street-address" 
-                                name="address" 
+                                type='street-address' 
+                                name='address' 
                                 value={this.state.address}
-                                placeholder="Enter your street address"
+                                placeholder='Enter your street address'
                                 onChange={this.handleChange}
                             />
-                            <label htmlFor="city">City</label>
+                            <label htmlFor='city'>City</label>
                             <input 
-                                type="text" 
-                                name="city" 
+                                type='text' 
+                                name='city' 
                                 value={this.state.city}
-                                placeholder="Enter your city"
+                                placeholder='Enter your city'
                                 onChange={this.handleChange}
                             />
                         </div>
-                        <div className="row-2">
-                            <div className="col-2">
-                                <label htmlFor="state">State</label>
+                        <div className='row-2'>
+                            <div className='col-2'>
+                                <label htmlFor='state'>State</label>
                                 <input 
-                                    type="text" 
-                                    name="state" 
+                                    type='text' 
+                                    name='state' 
                                     value={this.state.state}
-                                    placeholder="Ex: MA"
+                                    placeholder='Ex: MA'
                                     onChange={this.handleChange}
                                 />
                             </div>
-                            <div className="col-2">
-                                <label htmlFor="zip">Zip Code</label>
+                            <div className='col-2'>
+                                <label htmlFor='zip'>Zip Code</label>
                                 <input 
-                                    inputMode="numeric"
-                                    type="postal-code"
-                                    name="zip" 
-                                    pattern="[0-9]*"
+                                    inputMode='numeric'
+                                    type='postal-code'
+                                    name='zip' 
+                                    pattern='[0-9]*'
                                     value={this.state.zip}
-                                    placeholder="Ex: 02114"
+                                    placeholder='Ex: 02114'
                                     onChange={this.handleChange}
                                 />
                             </div>
@@ -137,11 +137,11 @@ class Checkout extends React.Component {
                     <div className='col'>
                         <h3>Payment</h3>
                         <div className='row-1'>
-                            <label htmlFor="cardName">Name on Card</label>
+                            <label htmlFor='cardName'>Name on Card</label>
                             <input 
-                                type="text" 
+                                type='text' 
                                 autoComplete='cc-name'
-                                name="cardName" 
+                                name='cardName' 
                                 value={this.state.cardName}
                                 placeholder="Enter card holder's name"
                                 onChange={this.handleChange}
@@ -150,43 +150,43 @@ class Checkout extends React.Component {
                    
                             <input 
                                 type='text'
-                                inputMode="numeric"
-                                autoComplete="cc-number"
-                                name="cardNumber"
+                                inputMode='numeric'
+                                autoComplete='cc-number'
+                                name='cardNumber'
                                 value={this.state.cardNumber}
-                                placeholder="xxxx xxxx xxxx xxxx"
+                                placeholder='xxxx xxxx xxxx xxxx'
                                 onChange={this.handleChange}
                             />
-                            <label htmlFor="expmonth">Exp Month</label>
+                            <label htmlFor='expmonth'>Exp Month</label>
                             <input 
-                                type="text"
-                                autoComplete="cc-exp-month"
-                                name="expmonth"
+                                type='text'
+                                autoComplete='cc-exp-month'
+                                name='expmonth'
                                 value={this.state.expmonth}
-                                placeholder="Month"
+                                placeholder='Month'
                                 onChange={this.handleChange}
                             />        
                         </div>
                         <div className='row-2'>
-                            <div className="col-2">
-                                <label htmlFor="expyear">Exp Year</label>
+                            <div className='col-2'>
+                                <label htmlFor='expyear'>Exp Year</label>
                                 <input 
-                                    type="text"
-                                    autoComplete="cc-exp-year"
-                                    name="expyear"
+                                    type='text'
+                                    autoComplete='cc-exp-year'
+                                    name='expyear'
                                     value={this.state.expyear}
-                                    placeholder="20XX"
+                                    placeholder='20XX'
                                     onChange={this.handleChange}
                                 />  
                             </div>
-                            <div className="col-2">
-                                <label htmlFor="cvv">CVV</label>
+                            <div className='col-2'>
+                                <label htmlFor='cvv'>CVV</label>
                                 <input 
-                                    type="text"
-                                    autoComplete="cc-csc"
-                                    name="cvv"
+                                    type='text'
+                                    autoComplete='cc-csc'
+                                    name='cvv'
                                     value={this.state.cvv}
-                                    placeholder="xxx"
+                                    placeholder='xxx'
                                     onChange={this.handleChange}
                                 />  
                             </div>    
