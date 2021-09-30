@@ -4,7 +4,7 @@ import { Redirect } from 'react-router';
 import { APIURL } from '../../config';
 import UserForm from '../Data/UserForm';
 
-const Signup =() => {
+const Signup = () => {
     const initialUserState ={
         name: '',
         email: '',
@@ -25,7 +25,7 @@ const Signup =() => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        const url = `${APIURL}/users/`;
+        const url = `${APIURL}/users`;
 
         fetch(url, {
             method: 'POST',
