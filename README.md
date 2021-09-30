@@ -26,43 +26,6 @@ MERN(Mongodb,ExpressAPI,Reactjs,Nodejs)
 Mongoose
 
 
-## Models and Properties
-User
-```
-name: {
-    type: String,
-    required: true
-},
-email: {
-    type: String,
-    required: true,
-    unique: true
-},
-password: {
-    type: String,
-    required: true
-}
-```
-Pokemon
-```
-name: {
-    type: String,
-    required: true
-},
-description: {
-    type: String,
-    required: true
-},
-price: {
-    type: Number,
-    required: true
-},
-image: {
-    type: String,
-    required: true
-}
-```
-
 ## Wireframe
 Landing Page
 ![image](https://imgur.com/sM08Abg.png)
@@ -102,3 +65,4 @@ The Description page includes :
 - [x] Route Switching // Complete
 - [x] Pseudo Payment Option // Complete
 
+##
