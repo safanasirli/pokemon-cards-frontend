@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { APIURL } from '../../config.js'
-import PokemonForm from './PokemonForm.js';
+import PokemonForm from '../PokemonForm/PokemonForm.js';
+import './PokemonCreate.css';
 
 const PokemonCreate = () => {
   const initialPokemonState = {

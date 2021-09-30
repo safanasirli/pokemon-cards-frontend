@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Pokemon from './components/Pokemon/Pokemon';
-import PokemonCreate from './components/Home/PokemonCreate';
+import PokemonCreate from './components/PokemonCreate/PokemonCreate';
 
 function App() {
   return (
