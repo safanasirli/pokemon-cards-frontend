@@ -15,12 +15,11 @@ function UpdatePokemon({ match }) {
 		fetch(url)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data)
 				setPokemon({
-						name: data.name,
-						description: data.description,
-						image: data.image,
-						price: data.price,
+					name: data.name,
+					description: data.description,
+					image: data.image,
+					price: data.price,
 				});
 			})
 			.catch(() => {
@@ -49,35 +48,33 @@ function UpdatePokemon({ match }) {
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(pokemon)
 				setCreatedId(data._id);
-				console.log(data._id)
 			})
 			.catch(() => {
 				setError(true);
 			});
 	};
 
-    if (createdId) {
-			return <Redirect to={`/pokemons/${createdId}`} />;
-    }
+	if (createdId) {
+		return <Redirect to={`/pokemons/${createdId}`} />;
+	}
 
-    return (
-			<div>
-				<Header />
-				<div className='form-container'>
-					<h1>Update Pokemon</h1>
-					{error && <p>Please try again!</p>}
-					{pokemon && (
-						<PokemonForm
-							pokemon={pokemon}
-							handleChange={handleChange}
-							handleSubmit={handleSubmit}
-						/>
-					)}
-				</div>
+	return (
+		<div>
+			<Header />
+			<div className='form-container'>
+				<h1>Update Pokemon</h1>
+				{error && <p>Please try again!</p>}
+				{pokemon && (
+					<PokemonForm
+						pokemon={pokemon}
+						handleChange={handleChange}
+						handleSubmit={handleSubmit}
+					/>
+				)}
 			</div>
-    )
+		</div>
+	)
 }
 
 export default UpdatePokemon;
