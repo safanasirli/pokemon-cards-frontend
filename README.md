@@ -2,28 +2,38 @@
 
 # General Assembly - Project 3
 
+## Table of Contents
+* [Project Name](#project-name)
+* [Project Description](#project-description)
+* [Team Members](#team-members)
+* [Requirements](#requirements)
+* [Features](#features)
+* [Wireframe](#wireframe)
+* [User Stories](#user-stories)
+* [Workflow](#workflow)
+* [Planned Updates](#planned-updates)
+* [Version History](#version-history)
+
 ## Project Name
 PokeMon Sanctuary
 >[Click to check the app!](https://pokemon-sanctuary.herokuapp.com/)
 
-## Scrum master
-Trent Sanders
-
-
-## Team Members
-Annie Lee  
-Christina Whether  
-Safa Nasirli
-
 ## Project Description
 Our team set out to make an E-commerce app for a Pokemon adoption agency called PokeMon Sancutary. The app is intended for general populace consumption, catering to all ages.
+
+## Team Members
+Annie Lee - Fullstack Developer
+Christina Whethers - Lead BackEnd Developer
+Safa Nasirli - Lead FrontEnd Developer
+Trent Sanders - Scrum Leader
+
 
 ## Requirements:
 There are no special requirements
 
 ## Features:
-MERN(Mongodb,ExpressAPI,Reactjs,Nodejs)
-Mongoose
+[MERN](https://www.mongodb.com/mern-stack)([Mongodb](https://www.mongodb.com/),[Expressjs](https://expressjs.com/),[Reactjs](https://reactjs.org/),[Nodejs](https://nodejs.org/en/))
+[Mongoose](https://mongoosejs.com/)
 
 
 ## Wireframe
@@ -65,4 +75,6 @@ The Description page includes :
 - [x] Route Switching // Complete
 - [x] Pseudo Payment Option // Complete
 
-##
+## Version History
+*   0.1
+    * Intiial Release
