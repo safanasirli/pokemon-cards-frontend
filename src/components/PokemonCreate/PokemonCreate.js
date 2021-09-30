@@ -8,9 +8,8 @@ import './PokemonCreate.css';
 const PokemonCreate = () => {
   const initialPokemonState = {
     name: '',
-    species: '',
-    breed: '',
-    age: Number
+    description: '',
+    price: ''
   }
 
   const [pokemon, setPokemon] = useState(initialPokemonState);
