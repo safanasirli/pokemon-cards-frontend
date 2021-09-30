@@ -23,6 +23,12 @@
   margin-left: 10px;
 }
 
+/* Header */
+.logo-container a {
+  text-decoration: none;
+  color: white;
+}
+
 @media only screen and (max-width: 800px) {
   .logo-container {
     margin-top: 2rem;
