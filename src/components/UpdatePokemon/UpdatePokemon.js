@@ -12,7 +12,7 @@ function UpdatePokemon({ match }) {
 
 	useEffect(() => {
 		const url = `${APIURL}/pokemons/${match.params.id}`;
-		fetch(url)
+  fetch(url)
 			.then((response) => response.json())
 			.then((data) => {
 				// console.log(data)
@@ -58,26 +58,26 @@ function UpdatePokemon({ match }) {
 			});
 	};
 
-    if (createdId) {
-			return <Redirect to={`/pokemons/${createdId}`} />;
-    }
+	if (createdId) {
+		return <Redirect to={`/pokemons/${createdId}`} />;
+	}
 
-    return (
-			<div>
-				<Header />
-				<div className='form-container'>
-					<h1>Update Pokemon</h1>
-					{error && <p>Please try again!</p>}
-					{pokemon && (
-						<PokemonForm
-							pokemon={pokemon}
-							handleChange={handleChange}
-							handleSubmit={handleSubmit}
-						/>
-					)}
-				</div>
+	return (
+		<div>
+			<Header />
+			<div className='form-container'>
+				<h1>Update Pokemon</h1>
+				{error && <p>Please try again!</p>}
+				{pokemon && (
+					<PokemonForm
+						pokemon={pokemon}
+						handleChange={handleChange}
+						handleSubmit={handleSubmit}
+					/>
+				)}
 			</div>
-    )
+		</div>
+	)
 }
 
 export default UpdatePokemon;
