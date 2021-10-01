@@ -14,14 +14,14 @@ function Pokemon({ match }) {
 			.then(response => response.json())
 			.then(data => {
 					setPokemon(data)
-					console.log(data)
+					// console.log(data)
 			})
 			.catch(() => {
 					setError(true)
 			})
 	}, [match.params.id]);
 
-	console.log(match.params.id)
+	// console.log(match.params.id)
 
 	const onDeletePokemon = (event) => {
 		const url = `${APIURL}/pokemons/${match.params.id}`;
@@ -54,10 +54,16 @@ function Pokemon({ match }) {
 					</section>
 					<section className='right'>
 						<h1>{pokemon.name}</h1>
-						<p className='description'>{pokemon.description} </p>
+						<p className='description'>{pokemon.description}</p>
 						<h2>${pokemon.price}</h2>
-						<button className='update-button'><Link to={`/pokemons/${match.params.id}/update`}>Update Pokemon</Link></button>
-						<button className='update-button' onClick={onDeletePokemon}>Delete Pokemon</button>
+						<div className='buttons'>
+							{/* update button */}
+							<Link to={`/pokemons/${match.params.id}/update`}>
+								<button className='update-button'>Update Pokemon</button>
+							</Link>
+							{/* delete button */}
+							<button className='update-button' onClick={onDeletePokemon}>Delete Pokemon</button>
+						</div>
 					</section>
 				</div>
 		</div>

@@ -12,14 +12,15 @@ function UpdatePokemon({ match }) {
 
 	useEffect(() => {
 		const url = `${APIURL}/pokemons/${match.params.id}`;
-		fetch(url)
+  fetch(url)
 			.then((response) => response.json())
 			.then((data) => {
+				// console.log(data)
 				setPokemon({
-					name: data.name,
-					description: data.description,
-					image: data.image,
-					price: data.price,
+						name: data.name,
+						description: data.description,
+						image: data.image,
+						price: data.price,
 				});
 			})
 			.catch(() => {
@@ -48,9 +49,9 @@ function UpdatePokemon({ match }) {
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				//console.log(pokemon)
-				console.log(data)
+				// console.log(pokemon)
 				setCreatedId(data._id);
+				// console.log(data._id)
 			})
 			.catch(() => {
 				setError(true);
