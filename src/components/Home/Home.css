@@ -4,6 +4,10 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
+.createBtn {
+  margin: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -86,29 +90,21 @@ a {
   color: #4e4d4d;
   text-decoration: none;
 }
-
 .createBtn {
-  font-family: "Comfortaa", cursive;
-  display: flex;
+  display:flex;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top:1rem;
   padding: 10px 40px 10px 40px;
   font-size: 18px;
   background-color: #d41616;
   border: none;
   border-radius: 2%;
   color: white;
-  font-weight: 700;
+  font-weight:700; 
 }
-
-.createBtn a {
-  color: white;
+.createBtn a{
+  color:white;
 }
-
-.createBtn:hover {
-  background-color: #ee5252;
-}
-
 .pokemon-list-images {
   width: 150px;
   height: 150px;
@@ -119,6 +115,8 @@ a {
     display: flex;
     flex-direction: column;
     width: 80%;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-top: 2rem;
     margin-right: 12%;
