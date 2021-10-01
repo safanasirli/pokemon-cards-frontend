@@ -27,6 +27,7 @@ input:focus {
 }
 
 form button {
+  font-family: "Comfortaa", cursive;
   margin: 0 auto;
   margin-top: 1rem;
   padding: 10px 40px 10px 40px;
