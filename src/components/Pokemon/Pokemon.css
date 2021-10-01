@@ -37,7 +37,7 @@
   font-weight: 700;
 }
 
-.home-button:hover {
+.update-button:hover {
   background-color: #ee5252;
 }
 
@@ -65,9 +65,11 @@
     margin: 0 auto;
     margin-bottom: 4rem;
   }
+  
   .update-button {
     margin-top: 2rem;
   }
+  
   .pokemon-image {
     margin-top: 0;
   }
