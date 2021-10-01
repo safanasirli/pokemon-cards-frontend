@@ -14,14 +14,14 @@ function Pokemon({ match }) {
 			.then(response => response.json())
 			.then(data => {
 					setPokemon(data)
-					console.log(data)
+					// console.log(data)
 			})
 			.catch(() => {
 					setError(true)
 			})
 	}, [match.params.id]);
 
-	console.log(match.params.id)
+	// console.log(match.params.id)
 
 	const onDeletePokemon = (event) => {
 		const url = `${APIURL}/pokemons/${match.params.id}`;

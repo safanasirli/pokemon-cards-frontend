@@ -15,7 +15,7 @@ function UpdatePokemon({ match }) {
 		fetch(url)
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(data)
+				// console.log(data)
 				setPokemon({
 						name: data.name,
 						description: data.description,
@@ -49,9 +49,9 @@ function UpdatePokemon({ match }) {
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				console.log(pokemon)
+				// console.log(pokemon)
 				setCreatedId(data._id);
-				console.log(data._id)
+				// console.log(data._id)
 			})
 			.catch(() => {
 				setError(true);
