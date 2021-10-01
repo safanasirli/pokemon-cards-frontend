@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 @-webkit-keyframes pulsate-fwd {
   0% {
     -webkit-transform: scale(1);
