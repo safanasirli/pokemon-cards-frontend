@@ -100,8 +100,12 @@ a {
   font-weight: 700; 
 }
 
-.createBtn a{
+.createBtn a {
   color: white;
+}
+
+.createBtn:hover {
+  background-color: #ee5252;
 }
 
 .pokemon-list-images {

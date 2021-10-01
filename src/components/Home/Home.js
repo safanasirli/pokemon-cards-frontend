@@ -27,12 +27,15 @@ function Home() {
 	return (
 		<div className='home-container'>
 			<header>
-					<Header />
+				<Header />
 			</header>
 			<div className='main-container'>
-				<button className='createBtn'>
-					<Link to='/pokemons/create'>Create a Pokemon</Link>
-				</button>
+
+				{/* create button */}
+				<Link to='/pokemons/create'>
+					<button className='createBtn'>Create a Pokemon</button>
+				</Link>
+			
 				<ul className='pokemon-list'>
 					{pokemons.map(pokemon => {
 						return (
