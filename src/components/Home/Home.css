@@ -40,13 +40,31 @@ a {
 
 .main-container {
   height: 100%;
-  margin-bottom: 4rem;
+}
+
+.createBtn {
+  display: flex;
+  margin: 2rem auto -2rem auto;
+  padding: 10px 40px 10px 40px;
+  font-size: 18px;
+  background-color: #d41616;
+  border: none;
+  border-radius: 2%;
+  color: white;
+  font-weight: 700; 
+}
+
+.createBtn a {
+  color: white;
+}
+
+.createBtn:hover {
+  background-color: #ee5252;
 }
 
 .pokemon-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   list-style: none;
   padding: 0 auto;
   margin: 0 auto;
@@ -87,35 +105,19 @@ a {
   text-decoration: none;
 }
 
-.createBtn {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 1rem;
-  padding: 10px 40px 10px 40px;
-  font-size: 18px;
-  background-color: #d41616;
-  border: none;
-  border-radius: 2%;
-  color: white;
-  font-weight: 700; 
-}
-
-.createBtn a {
-  color: white;
-}
-
-.createBtn:hover {
-  background-color: #ee5252;
-}
-
 .pokemon-list-images {
   width: 150px;
   height: 150px;
 }
 
+@media only screen and (max-width: 900px) {
+  .createBtn {
+    margin: 1.5rem auto 0.5rem auto;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .pokemon-card {
-    display: flex;
     flex-direction: column;
     width: 80%;
     justify-content: center;
