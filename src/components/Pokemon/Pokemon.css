@@ -25,6 +25,7 @@
 }
 
 .update-button {
+  font-family: "Comfortaa", cursive;
   margin-left: 2rem;
   margin-top: 3rem;
   padding: 10px 40px 10px 40px;
@@ -62,13 +63,17 @@
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 4rem;
   }
-
+  .update-button {
+    margin-top: 2rem;
+  }
   .pokemon-image {
     margin-top: 0;
   }
 
   .description {
+    padding-top: 1rem;
     width: 80%;
     margin: auto;
   }
