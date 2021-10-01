@@ -88,6 +88,7 @@ a {
 }
 
 .createBtn {
+  font-family: "Comfortaa", cursive;
   display: flex;
   margin: 0 auto;
   margin-top: 1rem;
@@ -97,10 +98,10 @@ a {
   border: none;
   border-radius: 2%;
   color: white;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
-.createBtn a{
+.createBtn a {
   color: white;
 }
 
@@ -114,8 +115,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 80%;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
     margin-top: 2rem;
     margin-right: 12%;
