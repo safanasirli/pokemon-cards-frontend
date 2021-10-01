@@ -54,10 +54,12 @@ function Pokemon({ match }) {
 					</section>
 					<section className='right'>
 						<h1>{pokemon.name}</h1>
-						<p className='description'>{pokemon.description} </p>
+						<p className='description'>{pokemon.description}</p>
 						<h2>${pokemon.price}</h2>
-						<button className='update-button'><Link to={`/pokemons/${match.params.id}/update`}>Update Pokemon</Link></button>
-						<button className='update-button' onClick={onDeletePokemon}>Delete Pokemon</button>
+						<div className='buttons'>
+							<button className='update-button'><Link to={`/pokemons/${match.params.id}/update`}>Update Pokemon</Link></button>
+							<button className='update-button' onClick={onDeletePokemon}>Delete Pokemon</button>
+						</div>
 					</section>
 				</div>
 		</div>
