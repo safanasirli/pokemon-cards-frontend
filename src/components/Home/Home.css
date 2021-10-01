@@ -43,6 +43,27 @@ a {
   margin-bottom: 4rem;
 }
 
+.createBtn {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  margin: 2rem auto -2rem auto;
+  padding: 10px 40px 10px 40px;
+  font-size: 18px;
+  background-color: #d41616;
+  border: none;
+  border-radius: 2%;
+  color: white;
+  font-weight: 700;
+}
+
+.createBtn a {
+  color: white;
+}
+
+.createBtn:hover {
+  background-color: #ee5252;
+}
+
 .pokemon-list {
   display: flex;
   flex-direction: row;
@@ -87,31 +108,15 @@ a {
   text-decoration: none;
 }
 
-.createBtn {
-  font-family: "Comfortaa", cursive;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 1rem;
-  padding: 10px 40px 10px 40px;
-  font-size: 18px;
-  background-color: #d41616;
-  border: none;
-  border-radius: 2%;
-  color: white;
-  font-weight: 700;
-}
-
-.createBtn a {
-  color: white;
-}
-
-.createBtn:hover {
-  background-color: #ee5252;
-}
-
 .pokemon-list-images {
   width: 150px;
   height: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .createBtn {
+    margin: 1rem auto;
+  }
 }
 
 @media only screen and (max-width: 500px) {
