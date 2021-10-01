@@ -105,6 +105,10 @@ a {
   color: white;
 }
 
+.createBtn:hover {
+  background-color: #ee5252;
+}
+
 .pokemon-list-images {
   width: 150px;
   height: 150px;
