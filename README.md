@@ -17,7 +17,7 @@
 PokeMon Sanctuary
 >[Click to check the app!](https://powerful-taiga-16157.herokuapp.com/)
 
-## Project Reposititory Links
+## Project Repositories Links
 [FrontEnd](https://github.com/safanasirli/pokemon-sanctuary-frontend)
 
 [BackEnd](https://github.com/anniezoyinlee/pokemon-sanctuary-backend)
