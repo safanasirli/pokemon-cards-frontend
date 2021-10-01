@@ -1,19 +1,15 @@
-# Pokemon Sanctuary
+# Pokemon Sanctuary - Front End Plan
 
-## Team:
-
+## Team: 
 ### FrontEnd:
-
 - Safa Nasirli
 - Trent Sanders
 
 ### BackEnd:
-
 - Annie Lee
 - Christina Whether
 
 ## FrontEnd Team Plan:
-
 - Create a Mockup
 - Break the UI into components
 - Arrange all components in a hierarchy
