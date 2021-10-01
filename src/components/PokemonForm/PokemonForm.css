@@ -15,30 +15,41 @@ label {
 input {
   font-size: 1.2em;
   margin: 1%;
-  width: 55%;
+  width: 80%;
+  height: 30px;
+  padding-left: 10px;
   border-radius: 2px;
   border: grey 2px solid;
+}
+input:focus {
+  border: none;
+  outline: #f59696 3px solid;
 }
 
 form button {
   margin: 0 auto;
-  margin-top:1rem;
+  margin-top: 1rem;
   padding: 10px 40px 10px 40px;
   font-size: 18px;
   background-color: #d41616;
   border: none;
   border-radius: 2%;
   color: white;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 button:active {
   background-color: rgba(128, 128, 128, 0.25);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   form {
     width: 80vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  form {
+    width: 60vw;
   }
 }
 
