@@ -10,6 +10,7 @@ a {
 
 button {
   cursor: pointer;
+  font-family: "Comfortaa", cursive;
 }
 
 @-webkit-keyframes pulsate-fwd {
@@ -128,7 +129,6 @@ button {
     display: flex;
     flex-direction: column;
     width: 80%;
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-top: 2rem;
