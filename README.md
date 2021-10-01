@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Project Name](#project-name)
-* [Project Repositories](#project-repositories)
+* [Project Repositories](#project-repositories-links)
 * [Project Description](#project-description)
 * [Team Members](#team-members)
 * [Requirements](#requirements)
