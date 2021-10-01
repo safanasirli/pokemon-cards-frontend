@@ -1,24 +1,22 @@
-/* left right */
+
 .pokemon-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
   color: #272727;
 }
 
-.left {
-  width: 40%;
+.right {
+  margin-top: 5%;
+  margin-left: 3%;
 }
 
 .pokemon-image {
-  width: 25vw;
+  width: 400px;
+  height: 400px;
   margin-top: 3rem;
-  margin-left: 35%;
-}
-
-.right {
-  width: 40%;
-  margin-top: 5%;
 }
 
 .pokemon-container h1 {
@@ -27,38 +25,31 @@
   margin-bottom: 3px;
 }
 
+.update-button {
+  font-family: "Comfortaa", cursive;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  padding: 10px 40px 10px 40px;
+  font-size: 18px;
+  background-color: #d41616;
+  border: none;
+  border-radius: 2%;
+  color: white;
+  font-weight: 700;
+}
+
+.home-button:hover {
+  background-color: #ee5252;
+}
+
 .description {
   font-size: 25px;
   margin-left: 0;
-  /* when the description is longer than it's container, it goes to next line */
-  word-wrap: break-word;
-	word-break: break-all;
 }
 
 .pokemon-container h2 {
   font-size: 38px;
   margin-top: 3rem;
-}
-
-.buttons {
-  display: flex;
-  justify-content: left;
-}
-
-.update-button {
-  margin-right: 1rem;
-  margin-top: 1rem;
-  padding: 1em 2em 1em 2em;
-  background-color: #d41616;
-  border: none;
-  border-radius: 2%;
-  font-size: 18px;
-  font-weight: 700;
-  color: white;
-}
-
-.update-button:hover {
-  background-color: #ee5252;
 }
 
 .pokemon-container a {
@@ -68,55 +59,31 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .right {
-    margin: 0 auto;
-  }
-
   .pokemon-container {
+    display: flex;
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 4rem;
   }
-
+  .update-button {
+    margin-top: 2rem;
+  }
   .pokemon-image {
-    width: 40vw;
-    margin: 10% auto;
-  }
-
-  .pokemon-container h1 {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .description {
+    padding-top: 1rem;
     width: 80%;
-    margin: 3% auto;
+    margin: auto;
   }
 
   .pokemon-container h2 {
     margin-top: 1.5rem;
   }
 
-  .buttons {
-    flex-direction: column;
-  }
-
-  .update-button {
-    margin: 3% auto;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .left,
-  .right {
-    width: 80%;
-  }
-
-  .pokemon-image {
-    width: 60vw;
-    margin: 10% auto;
-  }
-
-  .update-button {
-    margin: 3% auto;
+  .home-button {
+    margin-top: 0px;
   }
 }

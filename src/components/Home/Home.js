@@ -23,7 +23,7 @@ function Home() {
 	if (error) {
 		return <div>Sorry, can't get pokemons.</div>
 	}
-	
+
 	return (
 		<div className='home-container'>
 			<header>
@@ -35,7 +35,7 @@ function Home() {
 				<Link to='/pokemons/create'>
 					<button className='createBtn'>Create a Pokemon</button>
 				</Link>
-			
+
 				<ul className='pokemon-list'>
 					{pokemons.map(pokemon => {
 						return (
