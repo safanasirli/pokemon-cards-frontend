@@ -16,6 +16,10 @@
 PokeMon Sanctuary
 >[Click to check the app!](https://powerful-taiga-16157.herokuapp.com/)
 
+## Project Reposititory Links
+[FrontEnd](https://github.com/safanasirli/pokemon-sanctuary-frontend)
+[BackEnd](https://github.com/anniezoyinlee/pokemon-sanctuary-backend)
+
 ## Project Description
 Hi! Welcome to our project: PokeMon Sanctuary. This project was designed to test/reinforce our MERN/CRUD understanding in a group setting. We decided that
 a E-commerce app simulating the purchase of PokeMon from an adoption agency would be the best way to demonstrate our knowledge in a unique way. 
